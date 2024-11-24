@@ -1,17 +1,11 @@
+import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { Bricolage_Grotesque, Oswald, Pixelify_Sans } from "next/font/google";
 import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+const mainFont = Bricolage_Grotesque({ subsets: ["latin"] });
+const oswaldFont = Oswald({ subsets: ["latin"], variable: "--font-oswald" });
+const pixelifyFont = Pixelify_Sans({ subsets: ["latin"], variable: "--font-pixel" });
 
 export const metadata: Metadata = {
   title: "Zakaria Asad",
@@ -25,9 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={cn(mainFont.className, oswaldFont.variable, pixelifyFont.variable)}>
         {children}
       </body>
     </html>
