@@ -1,10 +1,15 @@
+'use client'
+
+import WaterWaveContainer from "@/components/visualEffect/WaterWaveContainer";
 
 export default function Home() {
   return (
-    <>
-    <h1 className="font-oswald">My protofilio</h1>
-    <h1 className="font-pixel">My protofilio</h1>
-    <h1>My protofilio</h1>
-    </>
+    <WaterWaveContainer
+      dropRadius="3"
+      perturbance="3"
+      resolution="1080"
+    >
+      {() => <div className="h-screen"></div>}
+    </WaterWaveContainer>
   );
 }
