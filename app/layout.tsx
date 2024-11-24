@@ -1,3 +1,4 @@
+import GrainEffect from "@/components/visualEffect/GrainEffect";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Bricolage_Grotesque, Oswald, Pixelify_Sans } from "next/font/google";
@@ -20,6 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn(mainFont.className, oswaldFont.variable, pixelifyFont.variable)}>
+        <GrainEffect />
         {children}
       </body>
     </html>
