@@ -4,6 +4,7 @@ import Button from "@/components/ui/Button";
 import Card from "@/components/ui/Card";
 import FancyButton from "@/components/ui/FancyButton";
 import Input from "@/components/ui/Input";
+import LiveClock from "@/components/ui/LiveClock";
 import Profile from "@/components/ui/Profile";
 import TextArea from "@/components/ui/TextArea";
 import WaterWaveContainer from "@/components/visualEffect/WaterWaveContainer";
@@ -20,11 +21,12 @@ export default function Home() {
                 <Button>Basic Button</Button>
               </div>
               <Input placeholder="Any" type="text" />
-              <TextArea placeholder="Any"/>
+              <TextArea placeholder="Any" />
               <Profile />
               <div className="w-[350px]">
-              <FancyButton text="Contact Me" icon={<FaArrowRight />}/>
+                <FancyButton text="Contact Me" icon={<FaArrowRight />} />
               </div>
+              <LiveClock timeZone="Asia/Damascus"/>
             </Card>
           </div>
         </div>
