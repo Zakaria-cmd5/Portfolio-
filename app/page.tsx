@@ -6,7 +6,9 @@ import FancyButton from "@/components/ui/FancyButton";
 import Input from "@/components/ui/Input";
 import LiveClock from "@/components/ui/LiveClock";
 import Profile from "@/components/ui/Profile";
+import ScrollDown from "@/components/ui/ScrollDown";
 import TextArea from "@/components/ui/TextArea";
+import MegneticContainer from "@/components/visualEffect/MegneticContainer";
 import WaterWaveContainer from "@/components/visualEffect/WaterWaveContainer";
 import { FaArrowRight } from "react-icons/fa";
 
@@ -23,10 +25,13 @@ export default function Home() {
               <Input placeholder="Any" type="text" />
               <TextArea placeholder="Any" />
               <Profile />
-              <div className="w-[350px]">
+              <MegneticContainer classNames="w-[350px]">
                 <FancyButton text="Contact Me" icon={<FaArrowRight />} />
-              </div>
+              </MegneticContainer>
               <LiveClock timeZone="Asia/Damascus"/>
+              <MegneticContainer classNames="w-[350px]">
+                <ScrollDown />
+              </MegneticContainer>
             </Card>
           </div>
         </div>
