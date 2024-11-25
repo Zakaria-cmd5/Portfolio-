@@ -2,6 +2,8 @@
 
 import Button from "@/components/ui/Button";
 import Card from "@/components/ui/Card";
+import Input from "@/components/ui/Input";
+import TextArea from "@/components/ui/TextArea";
 import WaterWaveContainer from "@/components/visualEffect/WaterWaveContainer";
 
 export default function Home() {
@@ -14,6 +16,8 @@ export default function Home() {
               <div className="grid grid-cols-4">
                 <Button>Basic Button</Button>
               </div>
+              <Input placeholder="Any" type="text" />
+              <TextArea placeholder="Any"/>
             </Card>
           </div>
         </div>
