@@ -3,6 +3,7 @@
 import Button from "@/components/ui/Button";
 import Card from "@/components/ui/Card";
 import Input from "@/components/ui/Input";
+import Profile from "@/components/ui/Profile";
 import TextArea from "@/components/ui/TextArea";
 import WaterWaveContainer from "@/components/visualEffect/WaterWaveContainer";
 
@@ -18,6 +19,7 @@ export default function Home() {
               </div>
               <Input placeholder="Any" type="text" />
               <TextArea placeholder="Any"/>
+              <Profile />
             </Card>
           </div>
         </div>
