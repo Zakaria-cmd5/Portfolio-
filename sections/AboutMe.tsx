@@ -1,3 +1,5 @@
+import MeCard from "@/components/cards/Me";
+import ResumeCard from "@/components/cards/Resume";
 import Heading from "@/components/heading/Heading";
 import Card from "@/components/ui/Card";
 
@@ -7,8 +9,8 @@ const AboutMeSection = () => {
       <Heading number="02" title1="About" title2="Me" />
       <div className="space-y-4 py-8">
         <div className="space-y-4 md:grid md:grid-cols-2 md:gap-4 md:space-y-0 2xl:grid-cols-3">
-          <Card title="Me">Me</Card>
-          <Card title="Resume">Resume</Card>
+          <MeCard />
+          <ResumeCard />
           <Card title="Background">Background</Card>
           <Card title="Gallery" classNames="2xl:hidden">
             Gallery

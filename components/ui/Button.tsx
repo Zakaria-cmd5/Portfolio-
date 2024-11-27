@@ -13,7 +13,7 @@ const Button = ({ children, classNames, isIcon, link }: Props) => {
   return (
     <>
       {link ? (
-        <Link href={link} className="w-10 h-10 cursor-pointer">
+        <Link href={link} target="_blank" className="w-10 h-10 cursor-pointer">
           <ButtonBody classNames={classNames} isIcon={isIcon}>
             {children}
           </ButtonBody>
