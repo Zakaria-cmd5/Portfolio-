@@ -7,7 +7,7 @@ import Socials from "../ui/Socials";
 
 const ResumeCard = () => {
   return (
-    <Card classNames="md:h-full 2xl:h-fit">
+    <Card classNames="md:h-full">
       <p className="text-lg xl:text-2xl font-medium text-primary-foreground">
         Full Stack Engineer (NextJs, ReactJs) with 2+ years of experience.
         Proficient in frontend technologies, driven by proactive mindset, strong

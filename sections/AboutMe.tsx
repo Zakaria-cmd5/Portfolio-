@@ -4,8 +4,8 @@ import EducationCard from "@/components/cards/Education";
 import ExperienceCard from "@/components/cards/Experience";
 import MeCard from "@/components/cards/Me";
 import ResumeCard from "@/components/cards/Resume";
+import StackCard from "@/components/cards/Stack";
 import Heading from "@/components/heading/Heading";
-import Card from "@/components/ui/Card";
 import Gallery from "@/components/ui/Gallery";
 
 const AboutMeSection = () => {
@@ -26,7 +26,7 @@ const AboutMeSection = () => {
             <CertificationsCard />
           </div>
           <div className="space-y-4">
-            <Card title="Stack">Stack</Card>
+            <StackCard />
             <ExperienceCard />
             <EducationCard />
           </div>
