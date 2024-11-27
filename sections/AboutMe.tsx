@@ -3,6 +3,7 @@ import MeCard from "@/components/cards/Me";
 import ResumeCard from "@/components/cards/Resume";
 import Heading from "@/components/heading/Heading";
 import Card from "@/components/ui/Card";
+import Gallery from "@/components/ui/Gallery";
 
 const AboutMeSection = () => {
   return (
@@ -13,9 +14,9 @@ const AboutMeSection = () => {
           <MeCard />
           <ResumeCard />
           <BackgroundCard />
-          <Card title="Gallery" classNames="2xl:hidden">
-            Gallery
-          </Card>
+          <div className="2xl:hidden">
+            <Gallery />
+          </div>
         </div>
         <div className="space-y-4 md:grid md:grid-cols-2 md:gap-4 md:space-y-0 2xl:grid-cols-3">
           <div className="space-y-4">
@@ -28,7 +29,7 @@ const AboutMeSection = () => {
             <Card title="Education">Education</Card>
           </div>
           <div className="hidden 2xl:flex">
-            <Card title="Gallery">Gallery</Card>
+            <Gallery />
           </div>
         </div>
       </div>
