@@ -1,3 +1,4 @@
+import BackgroundCard from "@/components/cards/Background";
 import MeCard from "@/components/cards/Me";
 import ResumeCard from "@/components/cards/Resume";
 import Heading from "@/components/heading/Heading";
@@ -11,7 +12,7 @@ const AboutMeSection = () => {
         <div className="space-y-4 md:grid md:grid-cols-2 md:gap-4 md:space-y-0 2xl:grid-cols-3">
           <MeCard />
           <ResumeCard />
-          <Card title="Background">Background</Card>
+          <BackgroundCard />
           <Card title="Gallery" classNames="2xl:hidden">
             Gallery
           </Card>
