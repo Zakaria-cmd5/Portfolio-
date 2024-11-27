@@ -7,7 +7,7 @@ export const TimeLine = ({ children }: PropsWithChildren) => {
 };
 
 interface TimeLineItemProps {
-  date: string;
+  date: string | undefined;
   title: string;
   subTitle: string;
   link?: string;

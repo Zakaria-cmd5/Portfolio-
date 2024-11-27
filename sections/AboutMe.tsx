@@ -1,4 +1,6 @@
 import BackgroundCard from "@/components/cards/Background";
+import CertificationsCard from "@/components/cards/Certifications";
+import EducationCard from "@/components/cards/Education";
 import ExperienceCard from "@/components/cards/Experience";
 import MeCard from "@/components/cards/Me";
 import ResumeCard from "@/components/cards/Resume";
@@ -21,13 +23,12 @@ const AboutMeSection = () => {
         </div>
         <div className="space-y-4 md:grid md:grid-cols-2 md:gap-4 md:space-y-0 2xl:grid-cols-3">
           <div className="space-y-4">
-            <Card title="Instructor">Instructor</Card>
-            <Card title="Certification">Certification</Card>
+            <CertificationsCard />
           </div>
           <div className="space-y-4">
             <Card title="Stack">Stack</Card>
             <ExperienceCard />
-            <Card title="Education">Education</Card>
+            <EducationCard />
           </div>
           <div className="hidden 2xl:flex">
             <Gallery />
