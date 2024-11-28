@@ -3,12 +3,22 @@ import Heading from "@/components/heading/Heading";
 import Button from "@/components/ui/Button";
 import Card from "@/components/ui/Card";
 import Input from "@/components/ui/Input";
+import SelectInput from "@/components/ui/SelectInput";
 import TextArea from "@/components/ui/TextArea";
+import { useState } from "react";
 import { FaPhoneVolume, FaProjectDiagram, FaUser } from "react-icons/fa";
 import { MdEmail, MdSubject } from "react-icons/md";
 import { SiMinutemailer } from "react-icons/si";
 
 const ContactMeSection = () => {
+  const [services, setServices] = useState<string[]>([]);
+
+  const servicesOptions = [
+    { id: "Web Design", text: "Web Design" },
+    { id: "Web Development", text: "Web Development" },
+    { id: "Full Website", text: "Full Website" },
+  ];
+
   return (
     <div className="pt-24 px-3 lg:px-8">
       <Heading number="03" title1="Contact" title2="Me" />
@@ -41,12 +51,22 @@ const ContactMeSection = () => {
               <Input placeholder="Subject" type="text" icon={<MdSubject />} />
             </div>
             <div className="flex flex-col gap-6">
-              <div>
+              <div className="space-y-6">
                 <h1 className="font-bold text-lg">
                   What services are you in need for ?
                 </h1>
                 <div className="flex flex-wrap items-center justify-between mb-4 gap-8">
-                  {/* Options */}
+                  {servicesOptions.map((ser) => (
+                    <SelectInput
+                      key={ser.id}
+                      type="checkbox"
+                      id={ser.id}
+                      text={ser.text}
+                      selectedOption={services}
+                      setSelectedOption={setServices}
+                      allowMultiple
+                    />
+                  ))}
                 </div>
               </div>
             </div>
