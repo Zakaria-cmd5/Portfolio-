@@ -1,7 +1,8 @@
 "use client";
 
 import WaterWaveContainer from "@/components/visualEffect/WaterWaveContainer";
-import AboutMeSection from "@/sections/AboutMe";
+import ContactMeSection from "@/sections/ContactMe";
+// import AboutMeSection from "@/sections/AboutMe";
 // import FeaturedSection from "@/sections/Featured";
 // import LandingSection from "@/sections/Landing";
 
@@ -12,7 +13,8 @@ export default function Home() {
         <div>
           {/* <LandingSection /> */}
           {/* <FeaturedSection /> */}
-          <AboutMeSection />
+          {/* <AboutMeSection /> */}
+          <ContactMeSection />
         </div>
       )}
     </WaterWaveContainer>
