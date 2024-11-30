@@ -1,17 +1,19 @@
-import Header from "@/components/navigation/header/Header";
+import NavigationHeader from "@/components/navigation/header/NavigationHeader";
 import FancyButton from "@/components/ui/FancyButton";
 import LiveClock from "@/components/ui/LiveClock";
-import ScrollDown from "@/components/ui/ScrollDown";
 import MegneticContainer from "@/components/visualEffect/MegneticContainer";
 import { FaArrowRight } from "react-icons/fa";
 
 const LandingSection = () => {
   return (
-    <div className="relative h-screen overflow-hidden p-8">
-      <Header />
+    <div className="relative h-screen overflow-hidden p-8" id="home">
+      <NavigationHeader />
       <div className="absolute bottom-36 left-10 z-20 md:hidden">
         <MegneticContainer>
-          <FancyButton href="" text="Let's Talk" icon={<FaArrowRight />} />
+          <FancyButton
+            text="Let's Talk"
+            icon={<FaArrowRight />}
+          />
         </MegneticContainer>
       </div>
       <div className="absolute right-10 bottom-10">
@@ -38,9 +40,6 @@ const LandingSection = () => {
             </div>
           </div>
         </div>
-        <MegneticContainer classNames="absolute left-1/2 -translate-x-1/2 bottom-[8rem] md:bottom-[4rem] 2xl:-bottom-10">
-          <ScrollDown />
-        </MegneticContainer>
       </div>
     </div>
   );

@@ -1,19 +1,17 @@
 "use client";
 
 import WaterWaveContainer from "@/components/visualEffect/WaterWaveContainer";
-import ContactMeSection from "@/sections/ContactMe";
-// import AboutMeSection from "@/sections/AboutMe";
-// import FeaturedSection from "@/sections/Featured";
-// import LandingSection from "@/sections/Landing";
+import AboutMeSection from "@/sections/AboutMeSection";
+import ContactMeSection from "@/sections/ContactMeSection";
+import LandingSection from "@/sections/LandingSection";
 
 export default function Home() {
   return (
-    <WaterWaveContainer dropRadius="3" perturbance="3" resolution="1080">
+    <WaterWaveContainer dropRadius="3" perturbance="3" resolution="720">
       {() => (
         <div>
-          {/* <LandingSection /> */}
-          {/* <FeaturedSection /> */}
-          {/* <AboutMeSection /> */}
+          <LandingSection />
+          <AboutMeSection />
           <ContactMeSection />
         </div>
       )}

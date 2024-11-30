@@ -1,6 +1,6 @@
 "use client";
 
-import ContactMeCard from "@/components/cards/ContactMe";
+import ContactMeCard from "@/components/cards/ContactMeCard";
 import Heading from "@/components/heading/Heading";
 import Button from "@/components/ui/Button";
 import Card from "@/components/ui/Card";
@@ -36,8 +36,8 @@ const ContactMeSection = () => {
   };
 
   return (
-    <div className="pt-24 px-3 lg:px-8">
-      <Heading number="03" title1="Contact" title2="Me" />
+    <div className="pt-24 px-3 lg:px-8" id="contact">
+      <Heading number="02" title1="Contact" title2="Me" />
       <Card>
         <div className="grid gap-8 grid-cols-1 lg:grid-cols-3">
           <div className="flex flex-col gap-8">
