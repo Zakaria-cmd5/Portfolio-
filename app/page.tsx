@@ -1,9 +1,14 @@
 "use client";
 
-import WaterWaveContainer from "@/components/visualEffect/WaterWaveContainer";
 import AboutMeSection from "@/sections/AboutMeSection";
 import ContactMeSection from "@/sections/ContactMeSection";
 import LandingSection from "@/sections/LandingSection";
+import dynamic from "next/dynamic";
+
+const WaterWaveContainer = dynamic(
+  () => import("@/components/visualEffect/WaterWaveContainer"),
+  { ssr: false }
+);
 
 export default function Home() {
   return (
